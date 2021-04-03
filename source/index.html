@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="74" height="23" alt="Приложение «Пинк»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper"></div>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body class="page__body">
+<header class="page-header">
+  <p class="page-header__logo">
+    <img src="img/pink.svg" width="74" height="23" alt="Приложение «Пинк»">
+  </p>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a href="#">
               Главная
             </a>
           </li>
-          <a href="catalog.html">
-            Фотографии
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">
-            Конкурс
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">
-            HTML Academy
-          </a>
-        </li>
-      </ul>
-      <div class="main-nav__list user-list">
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
   </nav>
 </header>
 <main class="page-main">
@@ -50,23 +49,26 @@
           Взгляните на жизнь<br>
           иначе!
         </p>
-        <p class="download__intro">
+        <a class="download__intro" href="https://www.apple.com/ru/app-store/">
           Скачать приложение
-        </p>
+        </a>
       </header>
       <ul class="download__list">
-        <div class="download__item">
-          <li class="download__apple">
+        <li class="download__item">
+          <a class="download__apple" href="https://www.apple.com/ru/app-store/">
             <img src="img/apple-logo.svg" width="47" height="56" alt="Логтип apple">
-          </li>
-          <li class="download__android">
+          </a>
+        </li>
+        <li class="download__item">
+          <a class="download__android" href="https://play.google.com/store?hl=ru&gl=US">
             <img src="img/android-logo.svg" width="43" height="47" alt="Логтип android">
-          </li>
-          <li class="download__microsoft">
+          </a>
+        </li>
+        <li class="download__item">
+          <a class="download__microsoft" href="https://www.microsoft.com/ru-ru/store/apps/">
             <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логтип microsoft">
-          </li>
-
-        </div>
+          </a>
+        </li>
       </ul>
       <p class="download__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
@@ -185,15 +187,15 @@
       <ul class="contacts__list">
         <li class="contacts__item">
           <h3 class="contacts__title">Звоните:</h3>
-          <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__title">Пишите:</h3>
-          <a class="contacts__mail" href="#">mail@htmlacademy.ru</a>
+          <a class="contacts__text" href="#">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__title">Приезжайте в гости:</h3>
-          <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+          <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
         </li>
       </ul>
     </div>
@@ -210,13 +212,13 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy">Twitter</a>
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Twitter</a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.youtube.com/htmlacademy">Youtube</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Youtube</a>
         </li>
       </ul>
     </div>
