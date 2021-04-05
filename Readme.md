@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Анна](https://up.htmlacademy.ru/adaptive/22/user/1572625).
-* Наставник: [Кристина Жиделягина] (https://htmlacademy.ru/profile/id575159).
+* Наставник: [Кристина Жиделягина](https://htmlacademy.ru/profile/id575159).
 
 ---
 
