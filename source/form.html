@@ -13,7 +13,7 @@
         <img src="img/pink.svg" width="74" height="23" alt="Приложение «Пинк»">
       </p>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -45,7 +45,7 @@
       <h2 class="page__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
       <section class="form">
         <div class="form__wrapper">
-          <p>Поделитесь своей историей и получите
+          <p class="form__motive">Поделитесь своей историей и получите
             шанс выиграть ценный приз — 1000
             миль на вашу бонусную карту!
           </p>
@@ -64,57 +64,65 @@
                 <input class="info__field" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </p>
             </div>
-            <div class="achievement">
-              <h3 class="achievement__title">Ваши безбашенные достижения в путешествии</h3>
+            <div class="form__block achievement">
+              <h3 class="form__title">Ваши безбашенные достижения в путешествии</h3>
               <p class="achievement__block">
                 <input class="achievement__choice" type="checkbox" name ="choice" value="selfie" id="selfie" checked>
-                <label class="achievement__description" for="selfie">Сделал селфи с акулой</label>
+                <label class="form__text achievement__description" for="selfie">Сделал селфи с акулой</label>
               </p>
               <p class="achievement__block">
                 <input class="achievement__choice" type="checkbox" name ="choice" value="beach" id="beach" checked>
-                <label class="achievement__description" for="beach">Обгорел на пляже</label>
+                <label class="form__text achievement__description" for="beach">Обгорел на пляже</label>
               </p>
               <p class="achievement__block">
                 <input class="achievement__choice" type="checkbox" name ="choice" value="chuck" id="chuck">
-                <label class="achievement__description" for="chuck">Видел Чака Норриса</label>
+                <label class="form__text achievement__description" for="chuck">Видел Чака Норриса</label>
               </p>
               <p class="achievement__block">
                 <input class="achievement__choice" type="checkbox" name ="choice" value="souvenir" id="souvenir">
-                <label class="achievement__description" for="souvenir">Накупил сувениров</label>
+                <label class="form__text achievement__description" for="souvenir">Накупил сувениров</label>
               </p>
               <p class="achievement__block">
                 <input class="achievement__choice" type="checkbox" name ="choice" value="tower" id="tower" checked>
-                <label class="achievement__description" for="tower">Удержал башню</label>
+                <label class="form__text achievement__description" for="tower">Удержал башню</label>
               </p>
               <p class="achievement__block">
                 <input class="achievement__choice" type="checkbox" name ="choice" value="hotel" id="hotel">
-                <label class="achievement__description" for="hotel">Разгромил отель</label>
+                <label class="form__text achievement__description" for="hotel">Разгромил отель</label>
               </p>
             </div>
-            <div>
-              <p class="contacts">
-                <label class="contacts__text" for="phone">Номер телефона</label>
-                <input class="contacts__field" id="phone" type="number" name="phone" placeholder="Номер, пожалуйста">
+            <div class="info__block">
+              <p>
+                <label class="info__text" for="phone">Номер телефона</label>
+                <input class="info__field" id="phone" type="number" name="phone" placeholder="Номер, пожалуйста">
               </p>
               <p>
-                <label class="contacts__text" for="mail">Адрес почты</label>
-                <input class="contacts__field" id="mail" type="email" name="mail" placeholder="Введите почту*">
+                <label class="info__text" for="mail">Адрес почты</label>
+                <input class="info__field" id="mail" type="email" name="mail" placeholder="Введите почту*">
               </p>
             </div>
-            <div class="app">
-              <h3 class="app__title">С каким приложением путешествовали?</h3>
-                <label class="app__choice">
-                  <input class="app__item" type="radio" name="question" value="apple" checked>Pink для iOS
-                </label>
-                <label class="app__choice">
-                  <input class="app__item" type="radio" name="question" value="android">Pink на Android
-                </label>
-                <label class="app__choice">
-                  <input class="app__item" type="radio" name="question" value="windows">Windows Phone
-                </label>
+            <div class="form__block app">
+              <h3 class="form__title">С каким приложением путешествовали?</h3>
+              <ul class="app__list">
+                <li>
+                  <label class="app__choice">
+                    <input class="form__text app__item" type="radio" name="question" value="apple" checked>Pink для iOS
+                  </label>
+                </li>
+                <li>
+                  <label class="app__choice">
+                    <input class="form__text app__item" type="radio" name="question" value="android">Pink на Android
+                  </label>
+                </li>
+                <li>
+                  <label class="app__choice">
+                    <input class="form__text app__item" type="radio" name="question" value="windows">Windows Phone
+                  </label>
+              </li>
+              </ul>
             </div>
             <div class="emotions">
-              <label class="emotions__title" for="comment-field"><b>Опишите свои эмоции</b></label>
+              <label class="form__title" for="comment-field">Опишите свои эмоции</label>
               <textarea class="emotions__text" name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
             <input class="form__send" type="submit" value="Отправить форму">
