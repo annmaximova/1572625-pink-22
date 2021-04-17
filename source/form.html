@@ -51,77 +51,75 @@
           </p>
           <form action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="form__helper">
-              <label class="form__field">
+              <label class="form__field" for="surname">
                 <span class="form__field-title">Фамилия:</span>
-                <input class="form__field-input" id="surname" type="text"  placeholder="Укажите фамилию*">
+                <input class="form__field-input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
               </label>
-              <label class="form__field">
+              <label class="form__field" for="name">
                 <span class="form__field-title">Имя:</span>
-                <input class="form__field-input" id="name" type="text"  placeholder="Укажите имя*">
+                <input class="form__field-input" id="name" type="text" name="name" placeholder="Укажите имя*">
               </label>
-              <label class="form__field">
+              <label class="form__field" for="patronymic">
                 <span class="form__field-title">Отчество:</span>
-                <input class="form__field-input" id="name" type="text"  placeholder="Ну и отчество тоже">
+                <input class="form__field-input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </label>
             </div>
-            <div class="form__helper--grey">
+            <div class="form__helper form__helper--grey">
               <h3 class="form__group-title">Ваши безбашенные достижения в путешествии</h3>
-              <p class="form__choice">
-                <input type="checkbox" name ="choice" value="selfie" id="selfie" checked>
+              <div class="form__choice">
+                <input class="form__checkbox-input" type="checkbox" name ="choice" value="selfie" id="selfie" checked>
                 <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
-              </p>
-              <p class="form__choice">
-                <input type="checkbox" name ="choice" value="beach" id="beach" checked>
+              </div>
+              <div class="form__choice">
+                <input class="form__checkbox-input" type="checkbox" name ="choice" value="beach" id="beach" checked>
                 <label class="form__checkbox-label" for="beach">Обгорел на пляже</label>
-              </p>
-              <p class="form__choice">
-                <input type="checkbox" name ="choice" value="chuck" id="chuck">
+              </div>
+              <div class="form__choice">
+                <input class="form__checkbox-input" type="checkbox" name ="choice" value="chuck" id="chuck">
                 <label class="form__checkbox-label" for="chuck">Видел Чака Норриса</label>
-              </p>
-              <p class="form__choice">
-                <input type="checkbox" name ="choice" value="souvenir" id="souvenir">
+              </div>
+              <div class="form__choice">
+                <input class="form__checkbox-input" type="checkbox" name ="choice" value="souvenir" id="souvenir">
                 <label class="form__checkbox-label" for="souvenir">Накупил сувениров</label>
-              </p>
-              <p class="form__choice">
-                <input type="checkbox" name ="choice" value="tower" id="tower" checked>
+              </div>
+              <div class="form__choice">
+                <input class="form__checkbox-input" type="checkbox" name ="choice" value="tower" id="tower" checked>
                 <label class="form__checkbox-label" for="tower">Удержал башню</label>
-              </p>
-              <p class="form__choice">
-                <input type="checkbox" name ="choice" value="hotel" id="hotel">
+              </div>
+              <div class="form__choice">
+                <input class="form__checkbox-input" type="checkbox" name ="choice" value="hotel" id="hotel">
                 <label class="form__checkbox-label" for="hotel">Разгромил отель</label>
-              </p>
+              </div>
             </div>
             <div class="form__helper">
-              <label class="form__field">
+              <label class="form__field" for="phone">
                 <span class="form__field-title">Номер телефона</span>
-                <input class="form__field-input" id="surname" type="text"  placeholder="Номер, пожалуйста">
+                <input class="form__field-input" id="phone" type="number" name="phone" placeholder="Номер, пожалуйста">
               </label>
-              <label class="form__field">
+              <label class="form__field" for="mail">
                 <span class="form__field-title">Адрес почты</span>
-                <input class="form__field-input" id="surname" type="text"  placeholder="Введите почту*">
+                <input class="form__field-input" id="mail" type="e-mail" name="mail" placeholder="Введите почту*">
               </label>
             </div>
-            <div class="form__helper--grey">
+            <div class="form__helper form__helper--grey">
               <h3 class="form__group-title">С каким приложением путешествовали?</h3>
-              <ul class="form__radio">
-                <li>
+                <div class="form__radio">
                   <label class="form__radio-label">
-                    <input type="radio" name="question" value="apple" checked>Pink для iOS
+                    <input class="form__radio-input" type="radio" name="question" value="apple" checked>Pink для iOS
                   </label>
-                </li>
-                <li>
+                </div>
+                <div class="form__radio">
                   <label class="form__radio-label">
-                    <input type="radio" name="question" value="android">Pink на Android
+                    <input class="form__radio-input" type="radio" name="question" value="android">Pink на Android
                   </label>
-                </li>
-                <li>
+                </div>
+                <div class="form__radio">
                   <label class="form__radio-label">
-                    <input type="radio" name="question" value="windows">Windows Phone
+                    <input class="form__radio-input" type="radio" name="question" value="windows">Windows Phone
                   </label>
-                </li>
-              </ul>
+                </div>
             </div>
-            <div class="form__helper-texrarea">
+            <div class="form__helper form__helper-textrarea">
               <label class="form__group-title" for="comment-field">Опишите свои эмоции</label>
               <textarea class="form__field-textarea" name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
