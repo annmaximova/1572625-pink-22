@@ -4,6 +4,21 @@
 .page-header {
   background-color: #283645;
   color: @text-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  height: 66px;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+    height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 110px;
+  }
 }
 
 .main-nav__wrapper {
@@ -23,5 +38,18 @@
     font-weight: bold;
     color: @text-color;
     text-decoration: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 830px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
