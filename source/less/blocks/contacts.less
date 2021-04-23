@@ -18,6 +18,12 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__text {
