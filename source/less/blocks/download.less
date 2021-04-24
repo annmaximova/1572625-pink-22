@@ -4,26 +4,53 @@
 .download {
   color: @text-color;
   background-color: @download-background;
+  background-image: url("../../img/back-mobile.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../../img/back-tablet.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/back-desktop.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.download__header {
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
 .download__list {
   list-style: none;
   margin: 0;
   padding: 0;
-  align-content: start;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
 
 .download__wrapper {
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    min-height: 620px;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
-    margin: auto;
+    margin: 0 120px;
     max-width: 940px;
   }
 }
@@ -31,9 +58,12 @@
 .download__slogan {
   font-size: 24px;
   line-height: 29px;
-  min-height: 462px;
-  background-image: url("../../img/back-mobile.png");
-  background-repeat: no-repeat;
+  height: 462px;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    height: auto;
+  }
 }
 
 .download__intro {
@@ -50,10 +80,16 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  justify-self: start;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
 }
 
-.download__header {
-  justify-self: end;
-  order: 2;
+.download__phone {
+  @media (min-width: @tablet-width) {
+    min-width: 300px;
+    min-height: 300px;
+  }
 }
