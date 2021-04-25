@@ -8,8 +8,6 @@
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     background-image: url("../../img/back-tablet.png");
     background-repeat: no-repeat;
   }
@@ -20,22 +18,27 @@
   }
 }
 
-.download__header {
-  @media (min-width: @tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-}
-
 .download__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  padding-left: 150px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    text-align: left;
+    padding-left: 200px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.download__item {
+  padding-left: 25px;
 }
 
 .download__wrapper {
@@ -44,25 +47,43 @@
   @media (min-width: @tablet-width) {
     min-height: 620px;
     padding: 0 20px;
+    background-image: url("../../img/tablet-phone.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 250px 100px 50px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 120px;
-    max-width: 940px;
+    min-width: 940px;
+    background-image: url("../../img/desktop-phone.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+  }
+}
+
+.download__header {
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-left: 200px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
 .download__slogan {
   font-size: 24px;
   line-height: 29px;
-  height: 462px;
 
   @media (min-width: @tablet-width) {
     background: none;
-    height: auto;
   }
 }
 
@@ -84,12 +105,20 @@
   @media (min-width: @tablet-width) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    width: 300px;
+    padding-left: 200px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
 .download__phone {
+  text-align: left;
+
   @media (min-width: @tablet-width) {
-    min-width: 300px;
-    min-height: 300px;
+    display: none;
   }
 }
