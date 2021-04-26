@@ -47,49 +47,51 @@
             шанс выиграть ценный приз — 1000
             миль на вашу бонусную карту!
           </p>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
-            <div class="form__helper">
-              <label class="form__field" for="surname">
-                <span class="form__field-title">Фамилия:</span>
+          <form class="form__grid" action="https://echo.htmlacademy.ru/courses" method="post">
+            <div class="form__helper form__helper--data">
+              <div class="form__field" >
+                <label class="form__field-title" for="surname">Фамилия:</label>
                 <input class="form__field-input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
-              </label>
-              <label class="form__field" for="name">
-                <span class="form__field-title">Имя:</span>
+              </div>
+              <div class="form__field" >
+                <label class="form__field-title" for="name">Имя:</label>
                 <input class="form__field-input" id="name" type="text" name="name" placeholder="Укажите имя*">
-              </label>
-              <label class="form__field" for="patronymic">
-                <span class="form__field-title">Отчество:</span>
+              </div>
+              <div class="form__field" >
+                <label class="form__field-title" for="patronymic">Отчество:</label>
                 <input class="form__field-input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-              </label>
+              </div>
             </div>
-            <div class="form__helper form__helper--grey">
+            <div class="form__helper form__helper--grey form__helper--progress">
               <h3 class="form__group-title">Ваши безбашенные достижения в путешествии</h3>
-              <div class="form__choice">
-                <input class="form__checkbox-input" type="checkbox" name ="choice" value="selfie" id="selfie" checked>
-                <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
-              </div>
-              <div class="form__choice">
-                <input class="form__checkbox-input" type="checkbox" name ="choice" value="beach" id="beach" checked>
-                <label class="form__checkbox-label" for="beach">Обгорел на пляже</label>
-              </div>
-              <div class="form__choice">
-                <input class="form__checkbox-input" type="checkbox" name ="choice" value="chuck" id="chuck">
-                <label class="form__checkbox-label" for="chuck">Видел Чака Норриса</label>
-              </div>
-              <div class="form__choice">
-                <input class="form__checkbox-input" type="checkbox" name ="choice" value="souvenir" id="souvenir">
-                <label class="form__checkbox-label" for="souvenir">Накупил сувениров</label>
-              </div>
-              <div class="form__choice">
-                <input class="form__checkbox-input" type="checkbox" name ="choice" value="tower" id="tower" checked>
-                <label class="form__checkbox-label" for="tower">Удержал башню</label>
-              </div>
-              <div class="form__choice">
-                <input class="form__checkbox-input" type="checkbox" name ="choice" value="hotel" id="hotel">
-                <label class="form__checkbox-label" for="hotel">Разгромил отель</label>
+              <div class="form__group">
+                <div class="form__choice">
+                  <input class="form__checkbox-input" type="checkbox" name ="choice" value="selfie" id="selfie" checked>
+                  <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
+                </div>
+                <div class="form__choice">
+                  <input class="form__checkbox-input" type="checkbox" name ="choice" value="beach" id="beach" checked>
+                  <label class="form__checkbox-label" for="beach">Обгорел на пляже</label>
+                </div>
+                <div class="form__choice">
+                  <input class="form__checkbox-input" type="checkbox" name ="choice" value="chuck" id="chuck">
+                  <label class="form__checkbox-label" for="chuck">Видел Чака Норриса</label>
+                </div>
+                <div class="form__choice">
+                  <input class="form__checkbox-input" type="checkbox" name ="choice" value="souvenir" id="souvenir">
+                  <label class="form__checkbox-label" for="souvenir">Накупил сувениров</label>
+                </div>
+                <div class="form__choice">
+                  <input class="form__checkbox-input" type="checkbox" name ="choice" value="tower" id="tower" checked>
+                  <label class="form__checkbox-label" for="tower">Удержал башню</label>
+                </div>
+                <div class="form__choice">
+                  <input class="form__checkbox-input" type="checkbox" name ="choice" value="hotel" id="hotel">
+                  <label class="form__checkbox-label" for="hotel">Разгромил отель</label>
+                </div>
               </div>
             </div>
-            <div class="form__helper">
+            <div class="form__helper form__helper--contacts">
               <label class="form__field" for="phone">
                 <span class="form__field-title">Номер телефона</span>
                 <input class="form__field-input" id="phone" type="number" name="phone" placeholder="Номер, пожалуйста">
@@ -99,8 +101,9 @@
                 <input class="form__field-input" id="mail" type="e-mail" name="mail" placeholder="Введите почту*">
               </label>
             </div>
-            <div class="form__helper form__helper--grey">
+            <div class="form__helper form__helper--grey form__helper--app">
               <h3 class="form__group-title">С каким приложением путешествовали?</h3>
+              <div class="form__radio-list">
                 <div class="form__radio">
                   <label class="form__radio-label">
                     <input class="form__radio-input" type="radio" name="question" value="apple" checked>Pink для iOS
@@ -116,6 +119,7 @@
                     <input class="form__radio-input" type="radio" name="question" value="windows">Windows Phone
                   </label>
                 </div>
+              </div>
             </div>
             <div class="form__helper form__helper-textrarea">
               <label class="form__group-title" for="comment-field">Опишите свои эмоции</label>
