@@ -7,10 +7,10 @@
 </head>
 <body class="page__body">
 <header class="page-header">
-  <p class="page-header__logo">
+  <p class="page-header__logo page-header__logo--closed">
     <img src="img/pink.svg" width="74" height="23" alt="Приложение «Пинк»">
   </p>
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -86,18 +86,22 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
+          <img class="advantages__phone-desktop" src="img/iphoneadvantages.png" width="157" height="320" alt="Телефон">
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
         <li class="advantages__item">
+          <img class="advantages__phone-desktop" src="img/iphoneadvantages.png" width="157" height="320" alt="Телефон">
           <h3 class="advantages__title">Меняет мир вокруг</h3>
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
         <li class="advantages__item">
+          <img class="advantages__phone-desktop" src="img/iphoneadvantages.png" width="157" height="320" alt="Телефон">
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
+      <img class="advantages__phone" src="img/iphoneadvantages.png" width="157" height="320" alt="Телефон">
     </div>
   </section>
   <div class="effect__block">
@@ -268,5 +272,32 @@
     </div>
   </div>
 </footer>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+  var headerLogo = document.querySelector('page-header__logo');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+
+    navToggle.addEventListener('click', function() {
+    if (headerLogo.classList.contains('.page-header__logo--closed')) {
+      headerLogo.classList.remove('.page-header__logo--closed');
+      headerLogo.classList.add('.page-header__logo--opened');
+    } else {
+      headerLogo.classList.add('.page-header__logo--closed');
+      headerLogo.classList.remove('.page-header__logo--opened');
+    }
+  });
+</script>
 </body>
 </html>

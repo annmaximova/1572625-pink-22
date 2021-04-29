@@ -34,3 +34,21 @@
   font-size: 14px;
   line-height: 24px;
 }
+
+.advantages__phone {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__phone-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
