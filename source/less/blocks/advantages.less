@@ -8,6 +8,7 @@
 
 .advantages__wrapper {
   text-align: center;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -37,6 +38,16 @@
 
 .advantages__phone {
   @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__phone-pink {
+  position: absolute;
+  top: 335px;
+  right: 258px;
+
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }

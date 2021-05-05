@@ -12,6 +12,11 @@
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.png");
+      background-size: 1338px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
