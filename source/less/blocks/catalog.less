@@ -2,6 +2,21 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+
+  @media (min-width: @desktop-width) {
+    width: 572px;
+    font-size: 18px;
+    margin-top: 85px;
+    margin-bottom: 90px;
+    margin-left: 390px;
+  }
+}
+
+.catalog__title-after {
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+    margin-bottom: 68px;
+  }
 }
 
 .catalog {
@@ -22,8 +37,8 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 602px 555px 555px;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 650px 555px 620px;
   }
 }
 
@@ -33,10 +48,22 @@
   line-height: 24px;
   /*width: 280px;*/
   display: block;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 27px;
+  }
 }
 
 .catalog__text--panorama {
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin: 0;
+    padding-left: 0;
+  }
 }
 
 .catalog__item {
@@ -49,11 +76,51 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 50px;
+    position: relative;
+
+    &:nth-child(2),
+    &:nth-child(5) {
+      margin-left: 190px;
+    }
+
+    &:nth-child(4),
+    &:nth-child(7) {
+      margin-right: 187px;
+    }
+
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
+      margin-top: 55px;
+    }
   }
 }
 
 .catalog__name {
   font-weight: 700;
+
+
+  @media (min-width: @desktop-width) {
+    padding-top: 31px;
+    font-size: 14px;
+    padding-left: 27px;
+  }
+}
+
+.catalog__name--panorama {
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+   }
+}
+
+.catalog__addition {
+  @media (min-width: @desktop-width) {
+    padding-top: 31px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+   }
 }
 
 .catalog__description {
@@ -62,8 +129,31 @@
   background-color: #f2f2f2;
   margin: 0 auto;
 
+
   @media (min-width: @tablet-width) {
     width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 20px;
+
+    &:nth-child(2) {
+      padding-bottom: 35px;
+    }
+  }
+}
+
+.catalog__text-drums {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.catalog__text-melon,
+.catalog__text-mountains,
+.catalog__text-wing {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
   }
 }
 
@@ -75,7 +165,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 940px;
+    position: relative;
+    width: 910px;
+    text-align: left;
+    padding-left: 35px;
+    padding-top: 20px;
   }
 }
 
@@ -85,6 +179,19 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+    position: relative;
+    top: 13px;
+  }
+}
+
+.catalog__editor {
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin-left: 203px;
+  }
 }
 
 .catalog__editor-wrapper {
@@ -93,6 +200,11 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 50px;
   }
 }
 
@@ -114,6 +226,22 @@
   }
 }
 
+.catalog__like--panorama {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: 865px;
+    bottom: 48px;
+  }
+}
+
+.catalog__quantity--panorama {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: 740px;
+    bottom: 48px;
+  }
+}
+
 .catalog__photo-panorama {
   font-size: 12px;
   font-weight: 700;
@@ -121,11 +249,28 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #d22856;
-  padding: 10px 16px;
+  padding: 7px 20px;
   display: block;
   position: absolute;
   left: 330px;
+
+  @media (min-width: @desktop-width) {
+    left: 1005px;
+    top: 200px;
+  }
 }
+
+/*.catalog__item-car {
+  @media (min-width: @desktop-width) {
+    margin-left: 190px;
+  }
+}
+
+.catalog__item-sky {
+  @media (min-width: @desktop-width) {
+    margin-right: 187px;
+  }
+}*/
 
 .catalog__editor-list {
   display: flex;
@@ -135,6 +280,16 @@
 .catalog__editor-item {
   @media (min-width: @tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 8px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid #283645;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
@@ -146,6 +301,10 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -188,4 +347,20 @@
   box-sizing: border-box;
   border-radius: 30px;
   padding: 19px 90px;
+}
+
+.catalog__like-icon {
+  fill: @basic-pink;
+}
+
+.catalog__editor-cut {
+  fill: @basic-pink;
+}
+
+.catalog__editor-fill {
+  fill: @dark-blue;
+}
+
+.catalog__editor-contrast {
+  fill: @dark-blue;
 }

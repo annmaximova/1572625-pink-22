@@ -9,7 +9,6 @@
   background-color: #1d2631;
 
   @media (min-width: @tablet-width) {
-    height: 330px;
     background-image: url("../../img/form-back-tablet.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -17,6 +16,7 @@
     font-weight: 300;
     font-size: 50px;
     line-height: 68px;
+    margin: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/back-tablet@2x.png");
@@ -25,12 +25,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 330px;
+    height: 230px;
     background-image: url("../../img/back-desktop.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 170px;
+    padding-right: 200px;
+    margin: 0;
+    padding-left: 200px;
   }
 }
 
